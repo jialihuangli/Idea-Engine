@@ -1,0 +1,9 @@
+1
+2699
+Anecdote,Business,Chinese Characters (1),Chinese Characters (2),Chinese Characters (3),Chinese Characters (4),Chinese Characters (5),Chinese Characters (6),Chinese Characters (7),Chinese Words (General),Chinese Words (Locations),Design,Economics,Finance,Japanese Characters (Hiragana),Japanese Characters (Katakana),Japanese Words (1),Japanese Words (2),Japanese Words (3),Japanese Words (4),Japanese Words (5),Japanese Words (Phrases),Material Engineering,Psychology,Vocabulary
+Design,Japanese Words,Chinese Words,Chinese Characters,Japanese Characters
+1,73,83,118,188,189,1654,115
+50
+true
+Chinese Characters,Chinese Words,Japanese Characters,Japanese Words,All,Economics
+1

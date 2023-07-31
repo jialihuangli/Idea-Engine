@@ -1,0 +1,1330 @@
+@font-face {
+    font-family: Roboto;
+    src: url('file:resources/fonts/Roboto-Bold.ttf');
+}
+
+.root{
+    -fx-font-family: "Roboto";
+    -fx-focus-color:transparent;
+    -fx-faint-focus-color:transparent;
+    -fx-focus-border:transparent;
+
+    /*Panels*/
+    -borderPaneBackgroundColor: #252525;
+    -panelLeft: #1F1F1F;
+    -panelTop: #151515;
+    -entryBoxColor: #353535;
+    -buttonTextFill: #ffffff;
+
+    /*Buttons*/
+    -tagsColor: #3C6E71;
+    -tagsHover:#713f3c;
+
+    -coloredText: #DEDEDE;
+
+    -button1Color: #EF476FFF;
+    -button2Color: #FFD166FF;
+    -button3Color: #06D6A0FF;
+    -button4Color: #118AB2FF;
+    -button5Color: #6A7FDBFF;
+    -button6Color: #3C6E71FF;
+
+    -inputTextFill:#E0E0E0;
+    -promptTextFill: #E9E9E9A9;
+    -promptTextFillFocused: #F9F9F9EF;
+
+    -entryShadow: #F62E97;
+
+    -cardColor: #303030;
+    -cardTextColor: #E0E0E0;
+    -majorColor: #303030;
+
+
+}
+
+/*Info Bar*/
+.infoBar{
+    -fx-alignment: center-left;
+    }
+
+.infoText{
+    -fx-fill: white;
+    -fx-font-size: 28;
+    -fx-font-weight:bold;
+}
+/* BUTTONS */
+
+
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: -buttonTextFill;
+    -fx-alignment: center;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14;
+    -fx-font-smoothing-type: gray;
+}
+
+
+
+.button:hover {
+    -fx-background-color: rgba(0,0,0, 0.3);
+    -fx-text-fill: -buttonTextFill;
+}
+
+.button:pressed {
+    -fx-background-color: rgba(0,0,0, 0.2);
+    -fx-text-fill: -buttonTextFill;
+}
+
+
+    /* Add Button */
+
+.newEntryButton{
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-background-radius: 5;
+    -fx-background-color: transparent;
+    -fx-text-fill: -buttonTextFill;
+    -fx-alignment: center;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-font-smoothing-type: gray;
+}
+
+.newEntryButton:focused {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-text-fill: -buttonTextFill;
+}
+
+.newEntryButton:hover {
+    -fx-background-color:rgba(0,0,0, 0.3);
+    -fx-text-fill: -buttonTextFill;
+}
+
+.newEntryButton:pressed {
+    -fx-background-color:rgba(0,0,0, 0.2);
+    -fx-text-fill: -buttonTextFill;
+}
+
+    /* Save Exit */
+
+.saveExit{
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-background-radius: 5;
+    -fx-background-color: -button1Color;
+    -fx-text-fill: -buttonTextFill;
+    -fx-alignment: center-left;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-font-smoothing-type: gray;
+}
+
+.saveExit:focused {
+    -fx-background-color: -button1Color;
+}
+
+.saveExit:hover {
+    -fx-background-color: derive(-button1Color, -30%);
+    -fx-text-fill: -inputTextFill;
+}
+
+.saveExit:pressed {
+    -fx-background-color: derive(-button1Color, -15%);
+    -fx-text-fill: -inputTextFill;
+}
+
+.import{
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    -fx-border-width: 0;
+    -fx-background-radius: 5;
+    -fx-background-color: -button1Color;
+    -fx-text-fill: -buttonTextFill;
+    -fx-alignment: center-left;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-font-smoothing-type: gray;
+}
+
+.import:focused {
+    -fx-background-color: -button1Color;
+}
+
+.import:hover {
+    -fx-background-color: derive(-button1Color, -30%);
+    -fx-text-fill: -inputTextFill;
+}
+
+.import:pressed {
+    -fx-background-color: derive(-button1Color, -15%);
+    -fx-text-fill: -inputTextFill;
+}
+
+    /* Tag buttons */
+.tags{
+    -fx-border-color: transparent;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0;
+    -fx-padding: 10;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill: -buttonTextFill;
+    -fx-alignment: center;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-font-smoothing-type: gray;
+    -fx-background-color: -panelLeft;
+}
+
+.tagAddButton{
+    -fx-background-color: #28494b;
+    -fx-background-insets:1px;
+    -fx-alignment: center-left;
+}
+.tagAddButton:hover, .tagAddButton:focused{
+    -fx-background-color: #28494b;
+}
+
+.tagsButton{
+    -fx-font-size: 16px;
+    -fx-padding: 10px 10px 0px 10px;
+    -fx-border-insets: 5px 5px 5px 0px;
+    -fx-background-insets:10px 5px 0px 0px;
+    -fx-alignment: center-left;
+    -fx-background-color: -button1Color;
+    -fx-background-radius:15px;
+}
+.tagsButton:hover, .tagsButton:pressed{
+    -fx-background-color: derive(-button1Color, -15%);
+}
+
+    /*LeftPanel Buttons*/
+.button1{
+    -fx-padding: 10px;
+    -fx-background-insets: 8px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-background-color: -button1Color;
+    -fx-alignment: center-left;
+}
+
+
+.button2{
+    -fx-padding: 10px;
+    -fx-background-insets: 8px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: -button2Color;
+    -fx-alignment: center-left;
+}
+.button3{
+    -fx-padding: 10px;
+    -fx-background-insets: 8px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: -button3Color;
+    -fx-alignment: center-left;
+}
+.button4{
+    -fx-padding: 10px;
+    -fx-background-insets: 8px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: -button4Color;
+    -fx-alignment: center-left;
+}
+.button5{
+    -fx-padding: 10px;
+    -fx-background-insets: 8px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: -button5Color;
+    -fx-alignment: center-left;
+}
+.button6{
+    -fx-padding: 10px;
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 50;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-background-color: -button6Color;
+    -fx-alignment: center-left;
+}
+
+.button1:focused {
+    -fx-background-color: derive(-button1Color, -10%);
+}
+.button1:hover {
+    -fx-background-color: derive(-button1Color, -15%);
+}
+.button1:pressed {
+    -fx-background-color: derive(-button1Color, -20%);
+}
+
+.button1Tabs:focused {
+    -fx-background-color: derive(-button1Color, -10%);
+}
+.button1Tabs:hover {
+    -fx-background-color: derive(-button1Color, -20%);
+}
+.button1Tabs:pressed {
+    -fx-background-color: derive(-button1Color, -20%);
+}
+
+
+
+.button2:focused {
+    -fx-background-color: derive(-button2Color, -10%);
+}
+.button2:hover {
+    -fx-background-color: derive(-button2Color, -20%);
+}
+.button2:pressed {
+    -fx-background-color: derive(-button2Color, -20%);
+}
+.button3:focused {
+    -fx-background-color: derive(-button3Color, -10%);
+}
+.button3:hover {
+    -fx-background-color: derive(-button3Color, -20%);
+}
+.button3:pressed {
+    -fx-background-color: derive(-button3Color, -20%);
+}
+.button4:focused {
+    -fx-background-color: derive(-button4Color, -10%);
+}
+.button4:hover {
+    -fx-background-color: derive(-button4Color, -20%);
+}
+.button4:pressed {
+    -fx-background-color: derive(-button4Color, -20%);
+}
+.button5:focused {
+    -fx-background-color: derive(-button5Color, -10%);
+}
+.button5:hover {
+    -fx-background-color: derive(-button5Color, -20%);
+}
+.button5:pressed {
+    -fx-background-color: derive(-button5Color, -20%);
+}
+.button6:focused {
+    -fx-background-color: derive(-button6Color, -10%);
+}
+.button6:hover {
+    -fx-background-color: derive(-button6Color, -20%);
+}
+.button6:pressed {
+    -fx-background-color: derive(-button6Color, -20%);
+}
+
+.button1Selection{
+    -fx-alignment: center-left;
+    -fx-padding: 0px 5px 10px 5px;
+    -fx-background-insets: 0px 5px 10px 5px;
+    -fx-border-insets: 5px;
+    -fx-background-radius: 30;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button1Color, -25%);
+}
+
+.button1Selection:hover{
+    -fx-font-size: 17;
+    -fx-background-color: derive(-button1Color, -25%);
+}
+.button1Selection:pressed{
+    -fx-font-size: 18;
+    -fx-background-color: derive(-button1Color, -25%);
+}
+.button1Selection:focused{
+    -fx-font-size: 18;
+    -fx-background-color: derive(-button1Color, -25%);
+}
+
+.button4Selection{
+    -fx-alignment: center-left;
+    -fx-padding: 0px 5px 10px 5px;
+    -fx-background-insets: 0px 5px 10px 5px;
+    -fx-border-insets: 5px;
+    -fx-background-radius: 30;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button4Color, -25%);
+}
+
+.button4Selection:hover{
+    -fx-font-size: 17;
+    -fx-background-color: derive(-button4Color, -25%);
+}
+.button4Selection:pressed{
+    -fx-font-size: 18;
+    -fx-background-color: derive(-button4Color, -25%);
+}
+.button4Selection:focused{
+    -fx-font-size: 18;
+    -fx-background-color: derive(-button4Color, -25%);
+}
+
+.button1ExpansionBox{
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button1Color, -25%);
+}
+.button2ExpansionBox{
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button2Color, -25%);
+        -fx-alignment: center;
+}
+.button3ExpansionBox{
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button3Color, -25%);
+}
+.button4ExpansionBox{
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button4Color, -25%);
+}
+.button5ExpansionBox{
+    -fx-background-insets: 5px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button5Color, -25%);
+}
+
+       /* Toggle Buttons */
+.priorityToggles.toggle-button{
+    -fx-padding: 15px 7px 15px 7px;
+    -fx-background-insets: 5px 0px 5px 0px;
+    -fx-text-fill: -buttonTextFill;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: -button1Color;
+}
+.priorityToggles.toggle-button:selected{
+    -fx-background-color: derive(-button1Color, -20%);
+    -fx-border-width: 0;
+}
+.priorityToggles.toggle-button:hover{
+    -fx-background-color: derive(-button1Color, -30%);
+}
+
+.priorityToggles.toggle-button:focused{
+}
+
+.styleToggles.toggle-button{
+    -fx-padding: 10px 10px 20px 10px;
+    -fx-background-insets: 0px 3px 10px 3px;
+    -fx-border-insets: 10px;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button2Color, -30%);
+    -fx-alignment: center;
+}
+
+.styleToggles.toggle-button:selected{
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-button2Color, -5%);
+    -fx-border-width: 0;
+}
+.styleToggles.toggle-button:hover{
+    -fx-background-color: derive(-button2Color, -10%);
+}
+
+.styleToggles.toggle-button:focused{
+}
+
+
+/* Panes */
+
+.topPane{
+    -fx-background-color: -panelTop;
+}
+
+.leftPane{
+    -fx-background-color: -panelTop;
+    -fx-alignment: top-center;
+}
+
+/* Text Input */
+.text-area{
+    -fx-pref-row-count: 5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-entryBoxColor, -10%);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: -promptTextFill;
+}
+.text-area *.text {
+    -fx-text-alignment: left;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+.text-area.content{
+    -fx-font-family: "Roboto";
+    -fx-font-size: 24;
+    -fx-font-weight: bold;
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-text-fill: -inputTextFill;
+    -fx-prompt-text-fill: -promptTextFill;
+}
+
+.textTitle{
+    -fx-pref-row-count: 5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: derive(-entryBoxColor, -10%);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: -promptTextFill;
+    -fx-alignment: center-left;
+}
+
+
+.textTitle:hover {
+
+}
+
+.textTitle:focused {
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-prompt-text-fill: -promptTextFill;
+}
+
+
+.textDetail .text {
+    -fx-text-alignment: left;
+}
+
+.textDetail {
+    -fx-pref-row-count: 5;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 24;
+    -fx-background-radius:10;
+    -fx-border-radius:10;
+    -fx-alignment:center;
+    -fx-background-color: derive(-entryBoxColor, -10%);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: -promptTextFill;
+    -fx-padding: 10px;
+}
+
+.textDetail:hover {
+
+}
+
+.textDetail:focused {
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-prompt-text-fill: -promptTextFill;
+}
+
+.format-menu-button {
+    visibility: hidden;
+}
+
+.html-editor-text {
+    -fx-font: 12 Roboto;
+    -fx-text-fill: rgb(30, 80, 83);
+    -fx-border-color: transparent;
+}
+
+.html-editor:focused {
+    -fx-border-color: black;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+}
+
+.notification-bar>.pane {
+    -fx-background-color: red, yellow, blue;
+    -fx-padding: 5 5 5 5;
+    -fx-background-insets: 0, 1, 2;
+    -fx- : 5;
+}
+
+.notification-bar>.pane .title {
+    -fx-font-size: 1.333em; /*16px;*/
+    -fx-text-fill: #000;
+    -fx-font-weight: bold;
+}
+
+.notification-bar>.pane .label {
+    -fx-font-size: 1em; /*12px;*/
+    -fx-text-fill: #000;
+    -fx-alignment: top-left;
+}
+
+.combo-box {
+    -fx-padding: 2px;
+    -fx-border-insets: 0px 0px 0px 0px;
+    -fx-background-color: #F9F9F9;
+ }
+.combo-box .cell {
+    -fx-text-fill: black;
+ }
+
+ .comboBox.list-cell {
+    -fx-text-fill: black;
+    -fx-background: black;
+
+ }
+
+ .entryVBox{
+    -fx-background-color: -entryBoxColor;
+    -fx-padding: 35px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -button1Color, 15, .5, 0, 0);
+ }
+
+.borderPane{
+    -fx-background-color: -borderPaneBackgroundColor;
+}
+
+.exitBox {
+    -fx-text-fill: -buttonTextFill;
+    -fx-font-size: 15px;
+    -fx-background-color: -panelLeft;
+    -fx-font-weight: bold;
+}
+.exitBox > .button{
+    -fx-font-size: 15px;
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-background-insets: 5px;
+    -fx-padding: 15px;
+}
+
+/* STACKS */
+
+.smartStudyButtons {
+    -fx-font-size: 24px;
+    -fx-background-insets: 5px;
+    -fx-padding: 10px;
+    -fx-background-color: -button2Color;
+    -fx-background-radius: 15;
+}
+
+.smartStudyButtons:hover {
+    -fx-background-color: derive(-button2Color, -15%)
+}
+
+.tabsVBox{
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-padding: 15px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 15, .5, 0, 0);
+ }
+
+.currentTab{
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+.tab-pane{
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .2, 0, 0);
+    -fx-tab-min-height:40px;
+    -fx-tab-max-height:40px;
+}
+
+.tab{
+    -fx-background-radius: 10px 10px 0px 0px;
+    -fx-background-insets: 2 4 1.5 4,0,0;
+}
+.tab-down-button {
+-fx-padding: 0;
+}
+.tab-down-button .arrow {
+-fx-padding: 0;
+}
+.tab-pane .tab{
+    -fx-background-color: -borderPaneBackgroundColor;
+}
+
+.tab-pane .tab:selected{
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .3, 0, 0);
+    -fx-background-insets: 2 4 0 4,0,0;
+    -fx-background-color: -cardColor;
+    -fx-font-weight: bold;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: -coloredText;
+    -fx-font-size: 20px;
+
+}
+
+.tab:selected .tab-label {
+
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.tab1{
+    -fx-background-color: -cardColor;
+    -fx-padding: 5px;
+    -fx-insets: 10 10 10 10;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .3, 0,0);
+}
+.tab2{
+    -fx-background-color: -cardColor;
+    -fx-padding: 5px;
+    -fx-insets: 10 10 10 10;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .3, 0,0);
+}
+
+.tab3{
+    -fx-background-color: -cardColor;
+    -fx-padding: 5px 0px 5px 5px;
+    -fx-insets: 10 10 10 10;
+    -fx-background-radius: 10px 10px 10px 10px;
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .3, 0,0);
+}
+
+.tagPicker{
+    -fx-font-size: 24px;
+    -fx-fill: white;
+    -fx-alignment: top-center;
+    -fx-padding: 15px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 15, .5, 0, 0);
+}
+
+.tagPickerCombo{
+    -fx-alignment: top-center;
+}
+
+.tagPickerTags{
+    -fx-alignment: center;
+    -fx-padding: 15px;
+}
+
+.tagPickerButtons{
+}
+
+/*Stack Search*/
+.searchSectionHeaders{
+    -fx-font-size: 25px;
+    -fx-fill: white;
+    -fx-text-alignment: center;
+}
+
+/*Stacks Nodes*/
+.stackNodes{
+    -fx-font-size: 15px;
+    -fx-fill: white;
+    -fx-background: -entryBoxColor;
+    -fx-background-color: -entryBoxColor;
+    -fx-padding: 35px 35px 15px 35px;
+    -fx-background-insets: 20px 20px 0px 20px;
+    -fx-background-radius: 15px;
+    -fx-alignment: top-center;
+}
+
+.scrollNodes{
+    -fx-font-size: 15px;
+    -fx-fill: white;
+    -fx-background: -entryBoxColor;
+    -fx-background-color: -entryBoxColor;
+    -fx-padding: 35px 35px 35px 35px;
+    -fx-background-insets: 20px 20px 20px 20px;
+    -fx-background-radius: 15px;
+}
+
+/*Ministacks*/
+
+.miniStackPane{
+    -fx-padding: 10px;
+}
+
+.deckStackPane{
+    -fx-padding: 10px 15px 10px 15px;
+}
+
+.miniStackText{
+    -fx-font-size: 18px;
+    -fx-fill: white;
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
+}
+
+.miniStackFront{
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-padding: 5px;
+    -fx-fill: -cardColor;
+    -fx-border-color: black;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 2, .5, 0, 0);
+}
+
+.miniStackMiddle{
+    -fx-padding: 5px;
+    -fx-fill: derive(-cardColor, -40%);
+    -fx-border-color: -button2Color;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 2, .3, 0, 0);
+}
+
+.miniStackBottom{
+    -fx-padding: 5px;
+    -fx-fill: derive(-cardColor, -80%);
+    -fx-border-color: -button2Color;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 2, .3, 0, 0);
+}
+
+/* Scroll Pane */
+.scroll-bar.track {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+/* Recent All Decks Toggle */
+.recentAll.toggle-button{
+    -fx-padding: 0px 5px;
+    -fx-background-insets: 0px 0px;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+}
+.recentAll.toggle-button:selected{
+    -fx-text-fill: -button2Color;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}
+.recentAll.toggle-button:hover{
+    -fx-text-fill: -button2Color;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+}
+
+.recentAll.toggle-button:focused{
+    -fx-font-weight: bold;
+    -fx-underline: true;
+    -fx-text-fill: -button2Color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}
+
+.recentAllScroll{
+    -fx-background: -entryBoxColor;
+    -fx-background-color: -entryBoxColor;
+    -fx-alignment: top-center;
+}
+
+.recentAllScroll .scroll-bar:horizontal {
+    -fx-background: transparent;
+    -fx-pref-height: 10px;
+    -fx-background-color: transparent;
+}
+
+.recentAllScroll .scroll-bar:horizontal .track {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+.recentAllScroll .scroll-bar:horizontal .thumb {
+    -fx-background-color: derive(-button2Color, -20%);
+    -fx-background-radius:  2em;
+
+}
+
+.recentAllScroll .scroll-bar:horizontal .increment-button,
+.recentAllScroll .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+
+.recentAllScroll .scroll-bar:horizontal .scroll-arrow {
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+ .editVBox{
+    -fx-background-color: -entryBoxColor;
+    -fx-padding: 35px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 15, .5, 0, 0);
+ }
+
+.deckSize {
+    -fx-background-color: -panelLeft;
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 35px;
+    -fx-background-insets: 20px;
+}
+
+.pageNodes{
+    -fx-background-color: -panelLeft;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 35px 35px 15px 35px;
+    -fx-background-insets: 20px 20px 0px 20px;
+}
+.deckStackTextWithShadow{
+    -fx-font-size: 24px;
+    -fx-fill: white;
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, black, 10, .7, 0, 0);
+}
+.deckStackText{
+    -fx-font-size: 24px;
+    -fx-fill: white;
+    -fx-text-alignment: center;
+    -fx-padding: 10px;
+    -fx-font-weight: bold;
+}
+
+.editButton{
+    -fx-background-image: url("file:resources/imgs/edit.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+.editButton:hover{
+    -fx-background-image: url("file:resources/imgs/edit.png");
+    -fx-background-size: 24px 24px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-background-color: transparent;
+}
+
+.inclusionToggle.toggle-button{
+    -fx-padding: 15px 7px 15px 7px;
+    -fx-background-insets: 8px 0px 8px 0px;
+    -fx-text-fill: -buttonTextFill;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: -button2Color;
+        -fx-border-radius: 30px;
+
+}
+.inclusionToggle.toggle-button:selected{
+    -fx-background-color: derive(-button2Color, -20%);
+    -fx-border-width: 0;
+}
+.inclusionToggle.toggle-button:hover{
+    -fx-background-color: derive(-button2Color, -30%);
+}
+
+.inclusionToggle.toggle-button:focused{
+}
+
+.toggleName{
+    -fx-font-size: 15px;
+    -fx-fill: white;
+    -fx-alignment: top-center;
+    -fx-padding: 15px;
+}
+
+.deckCardEditor{
+    -fx-font-size: 24px;
+    -fx-fill: white;
+    -fx-alignment: top-center;
+    -fx-padding: 15px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 15, .5, 0, 0);
+}
+
+
+.importCardEditor{
+    -fx-font-size: 24px;
+    -fx-fill: white;
+    -fx-alignment: top-center;
+    -fx-padding: 15px;
+    -fx-background-insets: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: -borderPaneBackgroundColor;
+    -fx-effect: dropshadow(three-pass-box, -button1Color, 15, .5, 0, 0);
+}
+
+.separationBox{
+    -fx-alignment: top-left;
+    -fx-background-radius: 15px;
+    -fx-background-color: -panelLeft;
+    -fx-padding: 15px;
+
+}
+
+.inputBox{
+    -fx-alignment: top-left;
+    -fx-background-radius: 15px;
+    -fx-background-color: -panelLeft;
+    -fx-padding: 35px 35px 35px 35px;
+    -fx-background-insets: 20px 20px 20px 20px;
+
+}
+
+.statsLeftContainer{
+    -fx-alignment: top-left;
+    -fx-background-radius: 15px 0px 0px 15px;
+    -fx-background-color: -panelTop;
+}
+
+.statsLeftBox{
+    -fx-alignment: top-left;
+    -fx-background-radius: 15px 0px 0px 15px;
+    -fx-background-color: -panelTop;
+    -fx-padding: 15px 0px 15px 0px;
+}
+
+.statsLeftBox2{
+    -fx-alignment: top-left;
+    -fx-background-color: -panelLeft;
+    -fx-padding: 15px 0px 15px 0px;
+}
+
+.statMainSelectButtons{
+    -fx-background-radius: 0;
+    -fx-font-size: 18px;
+    -fx-fill: white;
+    -fx-alignment: center-left;
+}
+
+.statsChartBox{
+    -fx-alignment: center;
+    -fx-background-radius: 15px;
+    -fx-background-color: rgb(210,210,210);
+    -fx-padding: 15px;
+    -fx-background-insets: 15px;
+}
+
+.statMainSelectButtons:hover{
+    -fx-background-color: derive(-button4Color, -40%)
+}
+
+.statMainSelectButtonsSelected{
+    -fx-background-color: derive(-button4Color, -20%);
+}
+
+.yellowTextMedium{
+    -fx-font-size: 24px;
+    -fx-fill: -button2Color;
+    -fx-alignment: center-left;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.redTextMedium{
+    -fx-font-size: 24px;
+    -fx-fill: -button1Color;
+    -fx-alignment: center-left;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.redTextSmall{
+    -fx-font-size: 16px;
+    -fx-fill: -button1Color;
+    -fx-alignment: center-left;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.plusButton{
+    -fx-background-radius: 20px;
+    -fx-border-insets: 0px;
+    -fx-background-insets: 5px;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-color: -button2Color;
+    -fx-alignment: top-center;
+}
+.plusButton:hover{
+    -fx-background-color: derive(-button2Color, -30%);
+}
+
+.inclusionToggleScroll{
+    -fx-background: -entryBoxColor;
+    -fx-background-color: -entryBoxColor;
+}
+
+.inclusionToggleScroll .scroll-bar:vertical {
+    -fx-background: transparent;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-color: transparent;
+    -fx-unit-increment: 50;
+    -fx-block-increment: 200;
+}
+
+.inclusionToggleScroll .scroll-bar:vertical .track {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+.inclusionToggleScroll .scroll-bar:vertical .thumb {
+    -fx-background-color: derive(-button2Color, -20%);
+    -fx-background-radius:  2em;
+}
+
+.inclusionToggleScroll .scroll-bar:vertical .increment-button,
+.inclusionToggleScroll .scroll-bar:vertical .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 0 0;
+}
+
+.inclusionToggleScroll .scroll-bar:vertical .scroll-arrow {
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.stackType{
+    -fx-text-alignment: left;
+    -fx-background-radius:10;
+    -fx-border-radius:10;
+    -fx-alignment: center-left;
+    -fx-font-size: 30px;
+    -fx-fill: white;
+    -fx-padding: 15px;
+    -fx-background-insets: 0px 0px;
+}
+
+.titleAndButtonBox{
+    -fx-padding: 0px 15px 0px 15px;
+    -fx-alignment: center;
+}
+
+.topInfo{
+    -fx-font-size: 18px;
+    -fx-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+    -fx-font-weight: bold;
+}
+.topText{
+    -fx-font-size: 12px;
+    -fx-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 5px;
+    -fx-border-insets: 5px;
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+    -fx-background-insets: 5px;
+    -fx-font-weight: bold;
+
+}
+
+.infoContainer{
+    -fx-background-radius:10;
+    -fx-background-color: -button6Color;
+    -fx-background-radius: 20;
+    -fx-alignment:center;
+    -fx-padding: 10px 20px 10px 20px;
+    -fx-background-insets: 10px 10px 10px 10px;
+}
+
+.popupText{
+    -fx-font-size: 14px;
+    -fx-fill: white;
+    -fx-font-fill: white;
+    -fx-alignment: center;
+}
+
+.popupTextBox{
+    -fx-padding: 5px;
+    -fx-alignment: center;
+    -fx-fill: derive(-button2Color, -15%);
+}
+
+
+.ratingText{
+    -fx-font-size: 12px;
+    -fx-fill: -button2Color;
+    -fx-font-fill: -button2Color;
+    -fx-alignment: center;
+}
+
+.notificationText{
+    -fx-font-size: 14px;
+    -fx-fill: white;
+    -fx-font-fill: white;
+    -fx-alignment: center;
+}
+
+.notificationTextBox{
+    -fx-padding: 5px;
+    -fx-alignment: center;
+    -fx-fill: red;
+}
+
+.notifyMark{
+    -fx-font-size: 38px;
+    -fx-fill: red;
+    -fx-font-weight: bold;
+    -fx-font-fill: red;
+    -fx-alignment: center;
+    }
+
+.progressBox{
+    -fx-border-color: -button2Color;
+    -fx-fill: -panelLeft;
+}
+.progressBar{
+    -fx-fill:-button2Color;
+}
+
+.subTagBackButton{
+    -fx-padding: 0px;
+    -fx-background-insets: 0px;
+    -fx-border-insets: 5px;
+    -fx-background-radius: 10;
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+.subTagBackButton:hover{
+    -fx-background-color:rgba(0,0,0, 0.2);
+}
+
+.dataText{
+    -fx-pref-row-count: 5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14;
+    -fx-background-color: derive(-entryBoxColor, -10%);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: -promptTextFill;
+    -fx-alignment: top-left;
+    -fx-text-alignment:top-left;
+}
+
+.dataText .scroll-bar:vertical {
+    -fx-background: transparent;
+    -fx-pref-height: 20px;
+    -fx-pref-width: 20px;
+    -fx-background-color: transparent;
+    -fx-unit-increment: 50;
+    -fx-block-increment: 200;
+}
+
+.dataText .scroll-bar:vertical .thumb{
+   -fx-background-color: derive(-button1Color, -20%);
+    -fx-background-radius:  2em;
+}
+
+.separatorTextField {
+    -fx-pref-row-count: 1;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 16;
+    -fx-background-radius:10;
+    -fx-border-radius:10;
+    -fx-background-color: derive(-entryBoxColor, -10%);
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: -promptTextFill;
+    -fx-padding: 10px;
+}
+
+.optionNodes{
+    -fx-font-size: 15px;
+    -fx-fill: white;
+    -fx-background: -entryBoxColor;
+    -fx-background-color: -entryBoxColor;
+    -fx-padding: 10px;
+    -fx-background-insets: 0px;
+    -fx-background-radius: 15px;
+}
+
+.blueTextSmall{
+    -fx-font-size: 16px;
+    -fx-fill: -button4Color;
+    -fx-font-fill: -button4Color;
+    -fx-alignment: center-left;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+.blueTextMedium{
+    -fx-font-size: 24px;
+    -fx-fill: -button4Color;
+    -fx-alignment: center-left;
+        -fx-font-fill: -button4Color;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.blueTextLarge{
+    -fx-font-size: 40px;
+    -fx-fill: -button4Color;
+    -fx-alignment: center-left;
+        -fx-font-fill: -button4Color;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}

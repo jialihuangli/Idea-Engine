@@ -1,0 +1,227 @@
+
+.root{
+    -fx-font-family: "Roboto";
+    -fx-focus-color:transparent;
+    -fx-faint-focus-color:transparent;
+    -fx-focus-border:transparent;
+
+    /*Panels*/
+    -borderPaneBackgroundColor: #252525;
+    -panelLeft: #1F1F1F;
+    -panelTop: #151515;
+    -entryBoxColor: #353535;
+    -buttonTextFill: #ffffff;
+
+    /*Buttons*/
+    -tagsColor: #3C6E71;
+    -tagsHover:#713f3c;
+
+    -coloredText: #DEDEDE;
+
+    -button1Color: #EF476FFF;
+    -button2Color: #FFD166FF;
+    -button3Color: #06D6A0FF;
+    -button4Color: #118AB2FF;
+    -button5Color: #6A7FDBFF;
+    -button6Color: #3C6E71FF;
+
+    -inputTextFill:#E0E0E0;
+    -promptTextFill: #E9E9E9A9;
+    -promptTextFillFocused: #F9F9F9EF;
+
+    -entryShadow: #F62E97;
+
+    -cardColor: #303030;
+    -cardTextColor: #E0E0E0;
+    -majorColor: #303030;
+
+
+}
+
+.button{
+    -fx-font-size: 20px;
+    -font-weight: bold;
+    -fx-alignment: center;
+    -fx-font-smoothing-type: gray;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    -fx-font-size: 30px;
+    -fx-fill: white;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-background-radius: 15px;
+    -fx-background-color: -cardColor;
+    -fx-effect: dropshadow(three-pass-box, -button2Color, 20, .3, 0, 0);
+}
+
+.cardDetails{
+    -fx-background-color: #ebebeb;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-border-insets: 5px;
+    -fx-background-insets: 5px;
+}
+
+.detailText{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 24px;
+    -fx-fill: -cardTextColor;
+    -fx-background-radius: 10px;
+    -fx-background-color: -majorColor;
+    -fx-font-weight:normal;
+    -fx-padding: 10px;
+}
+
+.frontText{
+    -fx-fill: -cardTextColor;
+    -fx-font-weight:bold;
+}
+
+.webView{
+    -fx-padding: 0.5em;
+    -fx-background-color: #000000;
+}
+
+
+.extraText{
+    -fx-font-size: 16px;
+    -fx-fill: -coloredText;
+    -fx-font-style: italic;
+    -fx-padding: 5px;
+    -fx-alignment:center;
+}
+
+.starText{
+    -fx-font-size: 16px;
+    -fx-fill: -button2Color;
+    -fx-font-style: italic;
+    -fx-padding: 5px;
+    -fx-alignment:center;
+}
+
+.sourceText{
+    -fx-font-size: 13px;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-graphic-text-gap: 0px;
+    -fx-alignment: center;
+}
+
+.numText{
+    -fx-font-size: 13px;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-graphic-text-gap: 0px;
+    -fx-alignment: center;
+    -fx-font-weight:bold;
+}
+
+.extraBox{
+    -fx-background-color: -panelLeft;
+    -fx-padding: 5px;
+    -fx-insets: 5px;
+    -fx-fill: white;
+    -fx-background-radius: 10;
+    -fx-effect: innershadow(three-pass-box, -button2Color, 5, .3, 0, 0);
+}
+
+.symbol1{
+    -fx-font-size: 13px;
+    -fx-fill: white;
+    -fx-graphic-text-gap: 0px;
+    -fx-alignment: center;
+}
+
+.symbol2{
+    -fx-font-size: 13px;
+    -fx-fill: -button4Color;
+    -fx-graphic-text-gap: 0px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, -button4Color, 5, .3, 0, 0);
+}
+
+.symbol3{
+    -fx-font-size: 13px;
+    -fx-fill: -button5Color;
+    -fx-graphic-text-gap: 0px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, -button5Color, 10, .5, 0, 0);
+}
+
+.cardButtons{
+    -fx-font-size: 20px;
+    -fx-fill: -button4Color;
+    -fx-alignment: center;
+
+}
+
+.langTermText{
+    -fx-fill: white;
+    -fx-font-weight:bold;
+    -fx-font-size: 48px;
+}
+.langPronText{
+    -fx-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 36px;
+}
+.langDefText{
+    -fx-fill: white;
+    -fx-font-weight:bold;
+    -fx-font-size: 24px;
+}
+.box2{
+    -fx-border-style: hidden hidden solid hidden ;
+    -fx-border-width: 1;
+    -fx-border-color: -cardTextColor;
+}
+
+.editButton {
+   -fx-background-image: url("file:resources/imgs/edit.png");
+   -fx-background-size: 32px, 32px;
+   -fx-background-repeat: no-repeat;
+   -fx-background-position: center;
+   -fx-border-radius: 5;
+}
+.progressBar{
+    -fx-background-color: -button2Color;
+}
+
+.endCardStats{
+    -fx-font-size: 16px;
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+.negativeNumber{
+    -fx-fill: -button1Color;
+    -fx-text-fill: -button1Color;
+}
+.positiveNumber{
+    -fx-fill: -button3Color;
+    -fx-text-fill: -button3Color;
+}
+.standardText{
+    -fx-font-size: 16px;
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+.boldedText{
+    -fx-font-size: 16px;
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.infoGrid{
+    -fx-background-radius: 15px;
+    -fx-background-color: -panelTop;
+    -fx-effect: innershadow(three-pass-box, -button2Color, 5, .3, 0, 0);
+}
+.infoGridBox{
+    -fx-alignment: center-left;
+    -fx-padding: 0px 0px 0px 20px;
+}
