@@ -1,6 +1,6 @@
 # Idea-Engine
 
-Something I've been working on as a replacement for Quizlet. Quizlet doesn't have many of the features I want from a study tool, so I decided to apply some of the Java I've learned to make something that fits my needs directly. This project is still a work in progress, and this is just the code for it, not the final build. 
+Something I've been working on as a replacement for Quizlet. Quizlet doesn't have many of the features I want from a study tool, so I decided to apply some of the Java I've learned to make something that fits my needs directly. This project is still a work in progress and this is just the code for it, not the final build. 
 
 
 
@@ -44,7 +44,7 @@ The foundation is there, some charts are already implemented into the program, t
 
 ## Plans for the future
 
-A lot of what I have is incomplete. Some of the formatting is just placeholders or acts as a proof of concept. Other times I've added the foundation for, but haven't necessary implemented into my code as of yet. 
+A lot of what I have is incomplete. Some of the formatting is just placeholders or acts as a proof of concept. Other things I've added the foundation for, but haven't necessary implemented into my code as of yet. 
 
 One thing I will work on after most of everything else is polished is a text-to-speech feature. Although I've had a look into the code and API options for it, it hasn't been something urgently needed to be addressed, especially when every new feature adds 10 other bugs that makes the program non-functional. 
 
