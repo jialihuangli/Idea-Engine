@@ -3,7 +3,8 @@
 Something I've been working on as a replacement for Quizlet. Quizlet doesn't have many of the features I want from a study tool, so I decided to apply some of the Java I've learned to make something that fits my needs directly.
 
 
-# Feature 1: Decks, Tags, and Subtags
+
+## Feature 1: Decks, Tags, and Subtags
 
 One problem I had was that flashcards were only able to be used within it's own deck, without allowing you to feature it elsewhere. This also made it very hard to manage when you have decks of larger sizes. Especially when learning languages, it helps to separate things into much smaller categories, and allow you to focus on small subsections at a time before adding it to a much larger stack to study long term.
 
