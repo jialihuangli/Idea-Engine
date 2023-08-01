@@ -1,6 +1,6 @@
 # Idea-Engine
 
-Something I've been working on as a replacement for Quizlet. Quizlet doesn't have many of the features I want from a study tool, so I decided to apply some of the Java I've learned to make something that fits my needs directly.
+Something I've been working on as a replacement for Quizlet. Quizlet doesn't have many of the features I want from a study tool, so I decided to apply some of the Java I've learned to make something that fits my needs directly. This project is still a work in progress, and this is just the code for it, not the final build. 
 
 
 
