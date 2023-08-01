@@ -11,12 +11,14 @@ One problem I had was that flashcards were only able to be used within it's own 
 So what I did was create a tagging feature for every card you create, and you can create decks from those tags. I also split tags into subcategorizes called subtags, with gives further control of how I decide to organize my flashcards. 
 
 
-# Feature 2: A smarter way to study
+
+## Feature 2: A smarter way to study
 
 I created this before Quizlet had added the feature of a "know" and "don't know" pile and only had their star system, but my intention is the same as theirs. You should receive less of the flashcards you already know, and be given more of the ones you don't. However, I took this a step future. Instead of a binary system, I wanted one that took into consideration how many times you've remembered it consecutively, how many times you've studied it, and how long ago since you last studied the card. So I created a rating system (0-10) that changed based on how many times you got the card correct. This, along with other metadata, pushes cards with the lowest rating to the front, while also refreshing your memory of some cards that you might've forgetten over time. With this system in place, you should be able to work on what you have the most trouble with, while also removing a lot of time wasted rehashing what you already know. 
 
 
-# Feature 3: The details are important
+
+## Feature 3: The details are important
 
 Quizlet categorizes things into term and definition, and then formats everything as such. But there is a broad array of different types of flashcards, and having the ability to format the text also makes absorbing large pieces of information less tiresome.
 
@@ -25,7 +27,8 @@ When I create flashcards for Chinese, I need to have the character, the pronunct
 Some flashcards can be dense with information, so having a place specifically for detailed text that doesn't detract from the main headline I thought would be helpful. But having a block of text makes it hard to skim, and can be daunting to go through. So I added HTML formatting to part of the flashcard to make it easier to change font size, highlight text, create bulletpoints and add weight to informationally loaded flashcards. 
 
 
-# Feature 4: Data
+
+## Feature 4: Data
 
 While studying, I often ask myself a lot of questions, such as: 
 
@@ -38,7 +41,8 @@ So using the metadata for each card, tag, and deck, it allows me to know how lon
 The foundation is there, some charts are already implemented into the program, there's just a lot more work to be done in order to provide the best experience. 
 
 
-# Plans for the future
+
+## Plans for the future
 
 A lot of what I have is incomplete. Some of the formatting is just placeholders or acts as a proof of concept. Other times I've added the foundation for, but haven't necessary implemented into my code as of yet. 
 
