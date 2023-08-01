@@ -8,7 +8,7 @@ Something I've been working on as a replacement for Quizlet. Quizlet doesn't hav
 
 One problem I had was that flashcards were only able to be used within it's own deck, without allowing you to feature it elsewhere. This also made it very hard to manage when you have decks of larger sizes. Especially when learning languages, it helps to separate things into much smaller categories, and allow you to focus on small subsections at a time before adding it to a much larger stack to study long term.
 
-So what I did was create a tagging feature for every card you create, and you can create decks from those tags. I also split tags into subcategorizes called subtags, with gives further control of how I decide to organize my flashcards. 
+So what I did was create a tagging feature for every card you create, and you can create decks from those tags. I also split tags into subcategorizes called subtags, which gives further control of how I decide to organize my flashcards.
 
 
 
